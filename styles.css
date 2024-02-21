@@ -77,8 +77,8 @@ header ul {
 }
 
 #nav-list li {
-    padding: 3vh;
-    margin-left: 3vh;
+    padding: 32px 1.7vw 28px 1.7vw;
+    margin-left: 1.5vw;
     color: var(--secondary-color);
     position: relative;
     overflow: hidden;
@@ -277,6 +277,7 @@ main h2 {
     font-weight: 700;
     font-size: 1.20vw;
     color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 
 .new-desc {
@@ -356,6 +357,10 @@ footer {
     margin: 20px 15% 0 15%;
     display: flex;
     padding-top: 50px;
+}
+
+.footer-information-follow {
+    display: inline-flex;
 }
 
 /* FOOTER - Information */
@@ -482,12 +487,13 @@ footer .footer-email {
 
     /* HEADER */
     header h1 {
-        font-size: 24px;
+        font-size: 32px;
     }
 
     #moon-icon {
-        top: 54px;
-        width: 3vw;
+        top: 55px;
+        right: 13vw;
+        width: 2rem;
     }
 
     #nav-list {
@@ -499,9 +505,9 @@ footer .footer-email {
     }
 
     #menu-icon {
-        width: 2.5vw;
+        width: 2rem;
         position: absolute;
-        left: 23vw;
+        left: 13vw;
         top: 56px;
         cursor: pointer;
         display: block;
@@ -543,6 +549,18 @@ footer .footer-email {
         flex-direction: column;
     }
 
+    .box-upper p {
+        font-size: 15px;
+    }
+
+    .trend-img {
+        width: 70%;
+    }
+
+    .trend-title {
+        font-size: 24px;
+    }
+
     /* WHATS NEW */
     .new-page {
         flex-direction: column;
@@ -559,34 +577,38 @@ footer .footer-email {
     }
 
     .new-title {
-        font-size: 1.5vw;
+        font-size: 3vw;
+        line-height: 1;
+        margin-bottom: 10px;
     }
 
     .new-desc {
-        font-size: 0.95vw;
+        font-size: 2vw;
+    }
+
+    .new-topic-bar li {
+        font-size: 16px;
+    }
+
+    .new-writer-bar h3 {
+        font-size: 20px;
+    }
+
+    .new-writer-bar p {
+        font-size: 16;
     }
 
     /* FOOTER */
     .footer-center {
-        display: block;
+        display: inline-block;
         align-items: center;
         padding-top: 20px;
     }
 
-    .footer-information, .footer-follow {
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .footer-information h2, .footer-follow h2 {
-        text-align: center;
-        margin-right: 0;
-        font-size: 4vw;
-    }
-
-    .footer-information li, .footer-follow li {
-        font-size: 2vw;
+    .footer-information-follow{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 30px 20px;
     }
 
     .footer-subscribe {
@@ -595,15 +617,13 @@ footer .footer-email {
         border-right: none;
         border-left: none;
         padding: 20px 0 20px 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+        margin-bottom: 20px;
+        width: 100%;
     }
 
     .footer-contact {
-        width: 50%;
-        margin: 20px auto;
         padding: 0;
+        width: 100%;
     }
 
 }

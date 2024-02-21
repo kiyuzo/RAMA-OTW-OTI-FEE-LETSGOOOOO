@@ -48,3 +48,16 @@ seeMoreWriter.addEventListener('click', function(event) {
 
     currentWriter.textContent = currentWriter.textContent.includes('See More >') ? 'Collapse <' : 'See More >';
 });
+
+// MAX CHARACTER
+window.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth < 900) {
+        var elements = document.getElementsByClassName('new-desc');
+        for (var i = 0; i < elements.length; i++) {
+            var text = elements[i].innerText;
+            if (text.length > 100) {
+                elements[i].innerText = text.substring(0, 100) + '...';
+            }
+        }
+    }
+});
