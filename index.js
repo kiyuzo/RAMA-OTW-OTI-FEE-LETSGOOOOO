@@ -56,7 +56,8 @@ function shortenDesc() {
         var text = elements[i].getAttribute('data-original-text');
         if (window.innerWidth < 900 && text.length > 100) {
             elements[i].innerText = text.substring(0, 100) + '...';
-        } else {
+        }
+        else {
             elements[i].innerText = text;
         }
     }
