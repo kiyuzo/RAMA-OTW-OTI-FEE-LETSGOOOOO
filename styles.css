@@ -385,6 +385,7 @@ footer {
     margin-top: 20px;
     display: flex;
     padding-top: 50px;
+    justify-content: center;
 }
 
 .footer-information-follow {
