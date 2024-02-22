@@ -1,6 +1,7 @@
-// DARK MODE
+// DARK MODE (PAGE, MOON ICON, DROPDOWN MENU ICON, FAVICON)
 const darkModeIcon = document.getElementById('moon-icon');
 const dropdownMenuIcon = document.getElementById('menu-icon');
+const favicon = document.getElementById('favicon');
 
 darkModeIcon.onclick = function() {
     document.body.classList.toggle('dark-mode');
