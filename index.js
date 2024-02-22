@@ -8,11 +8,12 @@ darkModeIcon.onclick = function() {
     if (document.body.classList.contains('dark-mode')) {
         darkModeIcon.src = './assets/sun-icon.png'; // changes into the sun icon (light)
         dropdownMenuIcon.src = './assets/menu-icon-light.png'; // changes the menu icon from dark to light
-
+        favicon.href = './assets/favicon-dark.png'; // changes the favicon from light to dark to represent dark mode
     }
-    else {
+    else { // changes everything back
         darkModeIcon.src = './assets/moon-icon.png';
         dropdownMenuIcon.src = './assets/menu-icon-dark.png';
+        favicon.href = './assets/favicon-light.png';
     }
 }
 
