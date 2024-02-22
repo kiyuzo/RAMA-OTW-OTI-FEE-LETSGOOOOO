@@ -382,7 +382,7 @@ footer {
 }
 
 .footer-center {
-    margin: 20px 15% 0 15%;
+    margin-top: 20px;
     display: flex;
     padding-top: 50px;
 }
@@ -507,10 +507,6 @@ footer .footer-email {
     header, main {
         margin-left: 10%;
         margin-right: 10%;
-    }
-
-    footer {
-        padding-left: 0;
     }
 
     /* HEADER */
@@ -647,6 +643,12 @@ footer .footer-email {
         margin: 0 0 30px 20px;
     }
 
+    .footer-information, .footer-follow {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .footer-subscribe {
         border-top: 1px var(--primary-color) solid;
         border-bottom: 1px var(--primary-color) solid;
@@ -654,12 +656,39 @@ footer .footer-email {
         border-left: none;
         padding: 20px 0 20px 0;
         margin-bottom: 20px;
-        width: 100%;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-subscribe p {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .footer-contact {
         padding: 0;
-        width: 100%;
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+}
+
+@media screen and (max-width: 550px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    #moon-icon {
+        top: 47px;
+        width: 1.5rem;
+    }
+
+    #menu-icon {
+        top: 48px;
+        width: 1.5rem;
+    }
 }
