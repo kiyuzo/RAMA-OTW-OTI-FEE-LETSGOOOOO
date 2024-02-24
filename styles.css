@@ -12,6 +12,7 @@
     --secondary-color: #2C2828;
     --tertiary-color: #1B1B1B;
     --quaternary-color: #858585;
+    --quinary-color: lightgray;
 }
 
 header, main {
@@ -371,6 +372,7 @@ main h2 {
 
 .new-writer-profile {
     display: flex;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -474,6 +476,7 @@ footer .footer-email {
     --primary-color: #1b1b1b;
     --secondary-color: #D7D3D3;
     --tertiary-color: #E4E4E4;
+    --quinary-color: #2C2828;
 }
 
 /* SEE MORE */
@@ -499,6 +502,14 @@ footer .footer-email {
     color: #F2F1F0;
     background-color: #D23636;
     transition: 0.3s;
+}
+
+/* GLOBAL Page hover animation */
+.page-animation:hover {
+    background-color: var(--quinary-color);
+    scale: 1.02;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 /* MOBILE - Max Width 900 */
