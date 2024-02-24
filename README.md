@@ -9,6 +9,8 @@
 ## 1. **Project Description** 📎
   This is a project that i submitted for OmahTI's Open Recruitment 2024 Front End division.
 
+  Note! please use a 1920 x 1080 width 100% scale display for the best experience! since it is the display settings that i used when i was making the website! Thank you!!!
+
 ## 2. **Features and Explanation** 📲
    ### a. Dark Mode
        - Dark mode can be enabled by clicking the moon button.
