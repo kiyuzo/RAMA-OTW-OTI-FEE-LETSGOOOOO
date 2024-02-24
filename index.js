@@ -53,10 +53,10 @@ seeMoreWriter.addEventListener('click', function(event) {
 
 // MAX CHARACTER
 function shortenDesc() {
-    var elements = document.getElementsByClassName('new-desc');
+    var elements = document.getElementsByClassName('new-desc'); // store the variable elements with the referred class
     for (var i = 0; i < elements.length; i++) {
-        var text = elements[i].getAttribute('data-original-text');
-        if (window.innerWidth < 900 && text.length > 100) {
+        var text = elements[i].getAttribute('data-original-text'); // store the previous desc in the text variable
+        if (window.innerWidth < 900 && text.length > 100) { // if the window width is less than 900 and the text length is more than 100, then the desc will be shortened
             elements[i].innerText = text.substring(0, 100) + '...';
         }
         else {
@@ -65,7 +65,7 @@ function shortenDesc() {
     }
 }
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() { // check when the window is loaded, the desc will be shortened if the condition is met
     var elements = document.getElementsByClassName('new-desc');
     for (var i = 0; i < elements.length; i++) {
         elements[i].setAttribute('data-original-text', elements[i].innerText);
@@ -73,13 +73,13 @@ window.addEventListener('DOMContentLoaded', function() {
     shortenDesc();
 });
 
-window.addEventListener('resize', shortenDesc);
+window.addEventListener('resize', shortenDesc); // check when the window is resized, the desc will be shortened if the condition is met
 
 // MOON POP UP TEXT
 const popUpText = document.querySelector('.moon-pop-up-text');
 
-popUpText.classList.add('moon-pop-up-text--show');
+popUpText.classList.add('moon-pop-up-text--show'); // shows the animation when page is loaded
 
 setTimeout(function() {
-    popUpText.classList.remove('moon-pop-up-text--show');
+    popUpText.classList.remove('moon-pop-up-text--show'); // removes the notification after 5 seconds
 }, 5000);
